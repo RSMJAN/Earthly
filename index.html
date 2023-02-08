@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>earthly</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <a href="#" class="logo">Earthly</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Gallary</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </header>
+    <section>
+      <h2 id="text">
+        Earthly<br /><span>Sustainable products at affordable prices</span>
+      </h2>
+      <img src="bird1.png" id="bird1" />
+      <img src="bird2.png" id="bird2" />
+      <img src="forest.png" id="forest" />
+      <a href="#" id="btn">Shop Now</a>
+      <img src="rocks.png" alt="rocks" />
+      <img src="water.png" alt="water" />
+    </section>
+    <div class="sec">
+      <div class="bigboss">
+        <img class="box" src="111.webp" />
+        <!-- <img class="box" src="resize_1.webp" /> -->
+      
+      <p class="par">Plant Based Reusable Cups <br /></p>
+      <span class="namount"><span class="pamount">€2.99</span> €2.39</span>
+      <div class="atc"><button class="cart">Add to Cart</button></div>
+      </div>
+      <div class="bigboss">
+        <img class="box" src="22.webp" />
+        <!-- <img class="box" src="resize_2.webp" /> -->
+      
+      <p class="par">
+        Sustainability Starter Kit<br />
+        €10.99
+      </p>
+      <div class="atc"><button class="cart">Add to Cart</button></div>
+    </div>
+      <div class="bigboss">
+        <img class="box" src="33.webp" />
+        <!-- <img class="box" src="resize_3.webp" /> -->
+      
+      <p class="par">
+        Reusable Bamboo Straws<br />
+        €1.99
+      </p>
+      <div class="atc"><button class="cart">Add to Cart</button></div>
+    </div>
+      <div class="bigboss">
+        <img class="box" src="44.webp" />
+        <!-- <img class="box" src="resize_4.webp" /> -->
+      
+      <p class="par">Natural Bamboo Loofah<br /></p>
+      <span class="namount"><span class="pamount">€3.99</span> €2.99</span>
+      <div class="atc"><button class="cart">Add to Cart</button></div>
+    </div>
+      <div class="bigboss">
+        <img class="box" src="55.webp" />
+        <!-- <img class="box" src="resize_5.webp" /> -->
+      
+      <p class="par">Bamboo Toothbrush (set of 2)</p>
+      <span class="namount"><span class="pamount">€4.49</span> €3.59</span>
+      <div class="atc"><button class="cart">Add to Cart</button></div>
+    </div>
+      <div class="bigboss">
+        <img class="box" src="66.webp" />
+        <!-- <img class="box" src="resize_6.webp" /> -->
+      
+      <p class="par">
+        Plant Based Reusable Containers<br />
+        €2.99
+      </p>
+      <div class="atc"><button class="sold">Out of Stock</button></div>
+    </div>
+</div>
+    <footer class="foot">
+      <div class="cr">copyright@ 2023 Earthly. All Rights Reserved</div>
+    </footer>
+
+    <script>
+      let text = document.getElementById("text");
+      let bird1 = document.getElementById("bird1");
+      let bird2 = document.getElementById("bird2");
+      let btn = document.getElementById("btn");
+      let rocks = document.getElementById("rocks");
+      let forest = document.getElementById("forest");
+      let water = document.getElementById("water");
+      let header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+
+        text.style.top = 50 + value * -0.5 + "%";
+        bird1.style.top = value * -1.5 + "px";
+        bird1.style.left = value * 2 + "px";
+        bird2.style.top = value * -1.5 + "px";
+        bird2.style.left = value * -5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        rocks.style.top = value * -0.12 + "px";
+        forest.style.top = value * 0.25 + "px";
+        header.style.top = value * 0.5 + "px";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" sans-serif;
+  margin-top: 10;
+  padding-right: 0%;
+}
+
+body {
+  overflow-x: hidden;
+  /*fdsfdf8 */
+  background: #fff;
+  min-height: 100vh;
+}
+
+#header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+}
+
+#header .logo {
+  /* margin-top: -20;
+    margin-left: -60; */
+  color: #094b65;
+  font-weight: 700;
+  font-size: 3em;
+  text-decoration: none;
+  font-family: "Oooh Baby", cursive;
+}
+
+#header ul {
+  /* margin-top: -20;
+    margin-left: -40;
+    margin-right: -50; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #094b65;
+  border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active
+
+/*dfwefregvd */ {
+  background: #094b65;
+  color: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section ::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  background-image: linear-gradient(lightblue, #094b65);
+  z-index: 10;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section #text {
+  position: absolute;
+  color: #094b65;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.8em;
+  font-family: "Oooh Baby", cursive;
+  transform: translateY(-50%);
+}
+
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "poppins" sans-serif;
+}
+
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background: #fff;
+  color: #094b65;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+}
+
+.sec {
+  position: relative;
+  margin-top: linear-gradient(#3494a0, #094b65);
+  background-color: lightblue; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#3494a0, #094b65);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+
+.cr {
+  font-size: large;
+  font-weight: 500;
+}
+
+.par {
+  margin-left: 35px;
+  line-height: 38px;
+  padding-top: 5px;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e0f0f7;
+  font-family: sans-serif;
+  justify-content: start;
+}
+
+.namount{
+  line-height: 38px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e0f0f7;
+  font-family: sans-serif;
+  justify-content: start;
+  
+}
+
+.pamount{ 
+  margin-left: 35px;
+  text-decoration: line-through;
+margin-right: 6px; }
+
+
+.box {
+  border-radius: 50px;
+  border: 1px solid black;
+  -webkit-box-shadow: 0 10px 6px -6px #3494a0;
+  -moz-box-shadow: 0 10px 6px -6px #a3d0d6;
+  box-shadow: 0 10px 6px -6px #3494a0;
+  cursor: pointer;
+}
+
+.box:hover{
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.atc {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+
+}
+
+
+
+.cart {
+  display: flex;
+  justify-content: space-evenly;
+  width: 350px;
+  padding: 8px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: black;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.sold{
+  display: flex;
+  justify-content: space-evenly;
+  width: 350px;
+  padding: 8px;
+  border-radius: 20px;
+  color: black;
+  background-color: rgb(152, 174, 173);
+  font-size: 17px;
+}
+
+
+.cart:hover{
+  box-shadow: 0px 5px 10px 2.5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.foot {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  border: 4px;
+  border-color: black;
+}
+
